@@ -1,19 +1,404 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mi Primera Página Web</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Tu Negocio | Servicios Profesionales</title>
+
+    <meta
+        name="description"
+        content="Conoce nuestros servicios y contáctanos directamente por WhatsApp."
+    >
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Mi primera agencia de páginas web</h1>
+    <!-- MENU -->
+    <header class="header">
 
-    <p>
-        Esta página fue creada por mí.
-    </p>
+        <div class="container navbar">
+
+            <a href="#inicio" class="logo">
+                TU NEGOCIO
+            </a>
+
+            <nav class="nav">
+
+                <a href="#inicio">Inicio</a>
+
+                <a href="#servicios">Servicios</a>
+
+                <a href="#nosotros">Nosotros</a>
+
+                <a href="#contacto">Contacto</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="container hero-content">
+
+                <p class="hero-small">
+                    SERVICIO PROFESIONAL
+                </p>
+
+                <h1>
+                    La mejor solución para tus necesidades
+                </h1>
+
+                <p class="hero-description">
+
+                    Atención profesional, rápida y personalizada.
+                    Estamos preparados para ayudarte.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="https://wa.me/56956464569"
+                        class="button button-primary"
+                        target="_blank"
+                    >
+                        Hablar por WhatsApp
+                    </a>
+
+                    <a
+                        href="#servicios"
+                        class="button button-secondary"
+                    >
+                        Ver servicios
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVICIOS -->
+        <section id="servicios" class="section">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p>NUESTROS SERVICIOS</p>
+
+                    <h2>
+                        Todo lo que necesitas
+                    </h2>
+
+                </div>
+
+
+                <div class="cards">
+
+                    <article class="card">
+
+                        <h3>Servicio 1</h3>
+
+                        <p>
+                            Descripción breve del primer servicio.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <h3>Servicio 2</h3>
+
+                        <p>
+                            Descripción breve del segundo servicio.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <h3>Servicio 3</h3>
+
+                        <p>
+                            Descripción breve del tercer servicio.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BENEFICIOS -->
+        <section class="section section-dark">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p>¿POR QUÉ ELEGIRNOS?</p>
+
+                    <h2>
+                        Trabajamos pensando en ti
+                    </h2>
+
+                </div>
+
+
+                <div class="benefits">
+
+                    <div>
+
+                        <h3>✓ Atención rápida</h3>
+
+                        <p>
+                            Respondemos tus consultas de forma rápida.
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>✓ Calidad</h3>
+
+                        <p>
+                            Trabajamos para entregar un servicio de calidad.
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>✓ Experiencia</h3>
+
+                        <p>
+                            Atención profesional y personalizada.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- NOSOTROS -->
+        <section id="nosotros" class="section">
+
+            <div class="container about">
+
+                <div>
+
+                    <p class="eyebrow">
+                        SOBRE NOSOTROS
+                    </p>
+
+                    <h2>
+                        Un negocio comprometido con sus clientes
+                    </h2>
+
+                </div>
+
+
+                <div>
+
+                    <p>
+                        Aquí irá la historia del negocio.
+                    </p>
+
+                    <p>
+                        Más adelante utilizaremos IA para generar
+                        este contenido basándonos en la información
+                        real proporcionada por cada cliente.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GALERIA -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p>GALERÍA</p>
+
+                    <h2>
+                        Conoce nuestro trabajo
+                    </h2>
+
+                </div>
+
+
+                <div class="gallery">
+
+                    <div>Imagen 1</div>
+
+                    <div>Imagen 2</div>
+
+                    <div>Imagen 3</div>
+
+                    <div>Imagen 4</div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FAQ -->
+        <section class="section section-light">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p>PREGUNTAS FRECUENTES</p>
+
+                    <h2>
+                        Resolvemos tus dudas
+                    </h2>
+
+                </div>
+
+
+                <div class="faq">
+
+                    <details>
+
+                        <summary>
+                            ¿Cómo puedo contactarlos?
+                        </summary>
+
+                        <p>
+                            Puedes escribirnos directamente
+                            por WhatsApp.
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            ¿Cuáles son sus horarios?
+                        </summary>
+
+                        <p>
+                            Los horarios serán configurados
+                            para cada cliente.
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            ¿Dónde están ubicados?
+                        </summary>
+
+                        <p>
+                            La ubicación será configurada
+                            según el negocio.
+                        </p>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section contact">
+
+            <div class="container">
+
+                <h2>
+                    ¿Necesitas más información?
+                </h2>
+
+                <p>
+                    Escríbenos y te responderemos lo antes posible.
+                </p>
+
+                <a
+                    href="https://wa.me/56956464569"
+                    class="button button-primary"
+                    target="_blank"
+                >
+                    Contactar por WhatsApp
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 Tu Negocio.
+                Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- WHATSAPP -->
+    <a
+        href="https://wa.me/56956464569"
+        class="whatsapp"
+        target="_blank"
+        aria-label="Contactar por WhatsApp"
+    >
+        💬
+    </a>
+
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>

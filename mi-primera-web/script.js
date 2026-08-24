@@ -1,0 +1,1 @@
+console.log("Web Factory funcionando correctamente");

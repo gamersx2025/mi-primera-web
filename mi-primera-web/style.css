@@ -1,0 +1,332 @@
+/* -------------------------
+   CONFIGURACION GENERAL
+------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* -------------------------
+   CONTENEDOR
+------------------------- */
+
+.container {
+    width: min(1100px, 90%);
+    margin: auto;
+}
+
+
+/* -------------------------
+   HEADER
+------------------------- */
+
+.header {
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 1px solid #eeeeee;
+    z-index: 100;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* -------------------------
+   HERO
+------------------------- */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero-small,
+.eyebrow {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 6vw, 70px);
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.hero-description {
+    font-size: 20px;
+    max-width: 600px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+
+/* -------------------------
+   BOTONES
+------------------------- */
+
+.button {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-primary {
+    background: #111;
+    color: white;
+}
+
+.button-secondary {
+    border: 2px solid #111;
+    color: #111;
+}
+
+
+/* -------------------------
+   SECCIONES
+------------------------- */
+
+.section {
+    padding: 90px 0;
+}
+
+.section-light {
+    background: #f7f7f7;
+}
+
+.section-dark {
+    background: #111;
+    color: white;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+
+/* -------------------------
+   SERVICIOS
+------------------------- */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    padding: 30px;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+}
+
+
+/* -------------------------
+   BENEFICIOS
+------------------------- */
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* -------------------------
+   NOSOTROS
+------------------------- */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+
+/* -------------------------
+   GALERIA
+------------------------- */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.gallery div {
+    min-height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eeeeee;
+    border-radius: 10px;
+}
+
+
+/* -------------------------
+   FAQ
+------------------------- */
+
+.faq {
+    max-width: 800px;
+    margin: auto;
+}
+
+.faq details {
+    padding: 20px;
+    margin-bottom: 15px;
+    background: white;
+    border-radius: 8px;
+}
+
+.faq summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* -------------------------
+   CONTACTO
+------------------------- */
+
+.contact {
+    text-align: center;
+    background: #111;
+    color: white;
+}
+
+.contact .button-primary {
+    background: white;
+    color: #111;
+}
+
+
+/* -------------------------
+   FOOTER
+------------------------- */
+
+.footer {
+    background: #000;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+
+/* -------------------------
+   WHATSAPP
+------------------------- */
+
+.whatsapp {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #25d366;
+    color: white;
+
+    text-decoration: none;
+    font-size: 25px;
+
+    z-index: 1000;
+}
+
+
+/* -------------------------
+   RESPONSIVE
+------------------------- */
+
+@media (max-width: 800px) {
+
+    .nav {
+        display: none;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+}
